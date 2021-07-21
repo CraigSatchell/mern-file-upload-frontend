@@ -51,11 +51,13 @@ const App = () => {
          <div className="items">
             {items?.map(item => (
                <div className="card" key={item._id}>
-                  <div className="card-image waves-effect waves-block waves-light">
-                     <img className="activator" style={{ width: 100 }} src={item.image} alt="avatar" />
-                  </div>
-                  <div className="card-content">
-                     <span className="card-title activator grey-text text-darken-4">{item.title}</span>
+                  <div>
+                     <div className="card-image waves-effect waves-block waves-light">
+                        <img className="activator" src={item.image} alt="avatar" />
+                     </div>
+                     <div className="card-content">
+                        <span className="card-title activator grey-text text-darken-4">{item.title}</span>
+                     </div>
                   </div>
                </div>
             ))}

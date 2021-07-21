@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+   background-color: #b6b6b6;
+}
 .app {
     text-align: center;
+    min-width: 550px;
+
+
 }
 
 .app .header {
@@ -14,12 +20,14 @@
     margin-bottom: 75px;
     background-color: #336699;
     color: #ffffff;
+    box-shadow: 0px 3px 3px #333333;
 }
 
 .app .items {
     margin: 50px;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .app .preformatted {
@@ -27,17 +35,42 @@
 
 }
 
-.app .card {
+.app div.card {
     height: 150px;
     width: 150px;
     margin: 25px;
     background-color: #9fc2e6c7;
     padding: 25px;
-    border: 1px solid #999999;
+    border: 2px solid #336699;
+    transition: .6s;
     border-radius: 20px;
     box-shadow: 3px 3px 12px #666666;
+    opacity: .8;
+}
+
+
+.app div.card:hover {
+   width: 200px;
+   height: 200px;
+   opacity: 1.0;
+}
+
+
+
+
+.app .card {
+   box-shadow: 3px 3px 50px #316396c7 inset;
+   padding: 10px;
 }
 
 .app .fileupload {
    height: 45px;
+}
+
+.app input[type="file"] {
+   padding: 10px;
+}
+
+.app img {
+   width: 100%;
 }
